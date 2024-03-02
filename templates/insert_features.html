@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block header %}
+    <title>인구밀집도에따른 종속변수예측</title>
+{% endblock header %}
+    <!-- 
+        0   합계 일사량(MJ/m2)  48 non-null     float64
+        1   소형총증발량(mm)     48 non-null     float64
+        2   대형총증발량(mm)     48 non-null     float64
+        3   소형일최대증발량(mm)   48 non-null     float64
+        4   대형일최대증발량(mm)   48 non-null     float64
+        5   최고기온(°C)       48 non-null     float64
+        6   합계 일조시간(hr)    48 non-null     float64
+        7   최저기온(°C)       48 non-null     float64
+        8   최저초상온도(°C)     48 non-null     float64 
+    -->
+{% block contents %}  
+    <center>
+    <h2>인구밀집도에따른 종속변수예측</h2>
+    <form action="/print_predict" method="post">
+        <label for="feature1">원하는 인구밀집도 : </label>
+        <input type="text" id="feature1" name="feature1"><br><br>
+        <label for="feature2">현재 학교수 : </label>
+        <input type="text" id="feature3" name="feature2"><br><br>
+        <label for="feature3">현재 학원수 : </label>
+        <input type="text" id="feature4" name="feature3"><br><br>
+        <label for="feature4">현재 교통대수 : </label>
+        <input type="text" id="feature5" name="feature4"><br><br>
+        <label for="feature5">현재 아파트가격 : </label>
+        <input type="text" id="feature6" name="feature5"><br><br>
+        <label for="feature6">현재 상권수 : </label>
+        <input type="text" id="feature7" name="feature6"><br><br>
+        <label for="feature7">현재 회사수 : </label>
+        <input type="text" id="feature8" name="feature7"><br><br>
+        <label for="feature8">현재 병원수 : </label>
+        <input type="text" id="feature9" name="feature8"><br><br>
+
+        <!-- 추가 필요한 입력 필드 -->
+        <input type="submit" value="예측">
+    </form>
+    </center> 
+</body>
+{% endblock contents %}  

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block header %}
+    <title>예측 결과</title>
+{% endblock header %}
+{% block contents %} 
+<body>
+    <center>
+    <h2>예측결과</h2>
+    <p>예측하고자 하는 인구밀집도: {{ feature1 }}</p>
+    <p>현재 학교수: {{feature2}},      예측된 학교수: {{ school }},       늘려야할 학교수:{{school-feature2}}</p>
+    <p>현재 학원수: {{feature3}},      예측된 학원수: {{ academy }},      늘려야할 학원수:{{academy-feature3}} </p>
+    <p>현재 대중교통수: {{feature4}},  예측된 대중교통수: {{ transport }}, 늘려야할 대중교통수:{{transport-feature4}} </p>
+    <p>현재 아파트 가격: {{feature5}}, 예측된 아파트가격: {{ APT }},       늘려야할 아파트가격:{{APT-feature5}} </p>
+    <p>현재 상권수: {{feature6}},      예측된 상권수: {{ receipts }},     늘려야할 상권수:{{receipts-feature6}} </p>
+    <p>현재 회사수: {{feature7}},      예측된 회사수: {{ company }},      늘려야할 회사수:{{company-feature7}} </p>
+    <p>현재 병원수: {{feature8}},      예측된 병원수: {{ hospital }},     늘려야할 병원수:{{hospital-feature8}} </p>
+    <a href="/insert_features">다시 예측하기</a>
+</center>
+</body>
+{% endblock contents %}  
+
+

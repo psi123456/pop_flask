@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block header %}
+<title>미래융합교육원</title>
+{% endblock header %}
+    
+{% block contents %}
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{url_for('static', filename='logo1.jpg') }}" alt="Logo" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='logo2.jpg') }}" alt="logo2" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='logo3.jpg') }}" alt="logo3" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+{% endblock contents %}
+
+{% block explain_contents %}
+
+{% endblock explain_contents %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block contents %}
+<div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='logo4.png') }}" class="card-img" alt="Your Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">팀장 홍성윤</h5>
+          <p class="card-text">웹개발</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='logo5.png') }}" class="card-img" alt="Your Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">팀원 박상일</h5>
+          <p class="card-text">웹개발</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{url_for('static', filename='logo6.png') }}" class="card-img" alt="Your Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">팀원 윤지민</h5>
+          <p class="card-text">웹개발</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock contents %}

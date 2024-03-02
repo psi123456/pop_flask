@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block contents %}
+<nav class="mo_bar navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">지방소멸</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">국가정책</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">메가시티</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="section1" class="container-fluid bg-white text-dark" style="padding:100px 20px;">
+    <img src="{{url_for('static', filename='logo7.jpg') }}" alt="Logo" class="d-block" style="width:100%">
+</div>
+
+<div id="section2" class="container-fluid bg-white text-dark" style="padding:100px 20px;">
+    <img src="{{url_for('static', filename='logo8.png') }}" alt="Logo" class="d-block" style="width:100%">
+</div>
+
+<div id="section3" class="container-fluid bg-white text-dark" style="padding:100px 20px;">
+    <img src="{{url_for('static', filename='logo9.png') }}" alt="Logo" class="d-block" style="width:100%">
+</div>
+{% endblock contents %}
