@@ -27,7 +27,7 @@ app.config['SECRET_KEY']= 'abcbdbdmfn'
 app.config['MYSPL_HOST'] = 'localhost'
 app.config['MYSPL_USER'] = 'root'
 app.config['MYSPL_PORT'] = 3306
-app.config['MYSPL_PASSWORD'] = 'moon154848!@'
+app.config['MYSPL_PASSWORD'] = ''
 app.config['MYSPL_DB'] = 'sungjuk'
 
 def getConnection():
